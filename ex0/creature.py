@@ -11,7 +11,7 @@ class Creature(ABC):
         pass
 
     def describe(self) -> None:
-        print(f"{self._name} uses a {self._type} Creature")
+        print(f"{self._name} is a {self._type} type Creature")
 
 
 class Flameling(Creature):

@@ -10,7 +10,7 @@ def verificator(factory: CreatureFactory) -> None:
         print("The factory creation has an Error")
         return
 
-    print("Testing Factory")
+    print("Testing factory")
     base_creature.describe()
     base_creature.attack()
     evolved_creature.describe()
@@ -23,6 +23,7 @@ def creature_fight(factoryone: CreatureFactory, factorytwo: CreatureFactory) -> 
     playerone = factoryone.create_base()
     playertwo = factorytwo.create_base()
     
+    print("Testing battle")
     playerone.describe()
     print("vs.")
     playertwo.describe()
