@@ -67,3 +67,22 @@ class Torragon(Creature):
 
     def fight(self):
         print(f"{self.name} uses {self.weapon}!")
+
+
+class CreatureFactory(ABC):
+
+    @abstractmethod
+    def create_base():
+        pass
+
+    @abstractmethod
+    def create_evolved():
+        pass
+
+
+class FlameFactory(CreatureFactory):
+    pass
+
+
+class AquaFactory(CreatureFactory):
+    pass
